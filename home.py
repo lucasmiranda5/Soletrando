@@ -2,7 +2,7 @@
 
 # Form implementation generated from reading ui file 'home.ui'
 #
-# Created: Thu Sep 17 20:24:15 2015
+# Created: Sat Sep 19 10:50:39 2015
 #      by: PyQt4 UI code generator 4.11.3
 #
 # WARNING! All changes made in this file will be lost!
@@ -28,6 +28,9 @@ class Ui_MainWindow(object):
         MainWindow.setObjectName(_fromUtf8("MainWindow"))
         MainWindow.resize(526, 613)
         MainWindow.setCursor(QtGui.QCursor(QtCore.Qt.ArrowCursor))
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap(_fromUtf8(":/newPrefix/icon.png")), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
         self.centralwidget = QtGui.QWidget(MainWindow)
         self.centralwidget.setObjectName(_fromUtf8("centralwidget"))
         self.plainTextEdit = QtGui.QPlainTextEdit(self.centralwidget)
@@ -90,8 +93,9 @@ class Ui_MainWindow(object):
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
-        MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow", None))
+        MainWindow.setWindowTitle(_translate("MainWindow", "Soletrando", None))
         self.pushButton.setText(_translate("MainWindow", "COMEÇAR A SOLETRAR", None))
         self.pushButton_2.setText(_translate("MainWindow", "CADASTRAR PALAVRAS", None))
         self.pushButton_3.setText(_translate("MainWindow", "VER PALAVRAS", None))
 
+import ico_rc
